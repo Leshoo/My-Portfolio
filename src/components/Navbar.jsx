@@ -54,9 +54,12 @@ const Navbar = () => {
         </div>
 
         {/* Mobile Menu Button */}
-        <button onClick={toggleMenu} className="md:hidden px-3 py-2 border rounded text-gray-700 border-gray-700">
-          ☰
+        <button
+         onClick={toggleMenu}
+           className="fixed top-4 right-4 z-50 md:hidden px-3 py-2 border rounded text-gray-700 border-gray-700 bg-white shadow-lg">
+             ☰
         </button>
+
       </div>
 
       {/* Mobile Menu */}

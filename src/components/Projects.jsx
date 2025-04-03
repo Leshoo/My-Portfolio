@@ -64,7 +64,7 @@ const Projects = () => {
       </div>
 
       {/* Filter Buttons */}
-      <div className="flex justify-center gap-4 mt-6">
+      <div className="flex flex-wrap justify-center gap-4 mt-6">
         {categories.map((category, index) => (
           <button
             key={index}
