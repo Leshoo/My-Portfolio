@@ -11,7 +11,7 @@ const projects = [
     category: "Web Development",
     description: "A fully responsive portfolio built with React and Tailwind CSS.",
     image: project1,
-    link: "#",
+    link: "https://leshoo.github.io/My-Portfolio/",
   },
   {
     title: "E-commerce App",
