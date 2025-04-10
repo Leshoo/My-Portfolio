@@ -45,21 +45,21 @@ const Contact = () => {
   };
 
   return (
-    <section id="contact" className="w-screen py-16 px-6 bg-gradient-to-r from-white to-gray-100">
+    <section id="contact" className="w-screen py-16 px-6 bg-dark dark:bg-[#1e1e1e] transition-colors duration-300">
       <div className="max-w-4xl mx-auto text-center">
-        <h2 className="text-4xl font-bold text-gray-900">Get in Touch</h2>
-        <p className="text-gray-600 mt-2">Feel free to reach out for collaborations or any inquiries.</p>
+        <h2 className="text-4xl font-bold text-gray-900 dark:text-white">Get in Touch</h2>
+        <p className="text-gray-600 dark:text-gray-300 mt-2">Feel free to reach out for collaborations or any inquiries.</p>
       </div>
 
-      <form onSubmit={handleSubmit} className="mt-10 max-w-3xl mx-auto bg-white p-6 rounded-lg shadow-lg">
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+      <form onSubmit={handleSubmit} className="mt-10 max-w-3xl mx-auto bg-dark p-6 rounded-lg shadow-lg">
+        <div className="mt-10 max-w-3xl mx-auto bg-dark dark:bg-[#2a2a2a] p-6 rounded-lg shadow-lg">
           <input
             type="text"
             name="name"
             placeholder="Your Name"
             value={formData.name}
             onChange={handleChange}
-            className="border border-gray-300 p-3 rounded-md w-full"
+            className="border border-gray-300 dark:border-gray-600 bg-white dark:bg-[#1e1e1e] text-black dark:text-white p-3 rounded-md w-full"
           />
           <input
             type="email"
@@ -67,7 +67,7 @@ const Contact = () => {
             placeholder="Your Email"
             value={formData.email}
             onChange={handleChange}
-            className="border border-gray-300 p-3 rounded-md w-full"
+            className="border border-gray-300 dark:border-gray-600 bg-white dark:bg-[#1e1e1e] text-black dark:text-white p-3 rounded-md w-full"
           />
         </div>
         <textarea
@@ -75,7 +75,7 @@ const Contact = () => {
           placeholder="Your Message"
           value={formData.message}
           onChange={handleChange}
-          className="border border-gray-300 p-3 rounded-md w-full mt-4 h-32"
+          className="border border-gray-300 dark:border-gray-600 bg-white dark:bg-[#1e1e1e] text-black dark:text-white p-3 rounded-md w-full mt-4 h-32"
         ></textarea>
         <button type="submit" className="mt-4 px-6 py-3 bg-orange-500 text-white rounded-md hover:bg-orange-600 transition">
           Send Message
@@ -83,7 +83,8 @@ const Contact = () => {
       </form>
 
       {/* Status Message */}
-      {statusMessage && <p className="text-center mt-4 text-gray-700">{statusMessage}</p>}
+      {statusMessage && <p className="text-center mt-4 text-gray-700 dark:text-gray-300">{statusMessage}</p>}
+      <footer><p className="text-center mt-6">&copy; <span className="text-orange-600">Godie</span>Lesh 2025</p></footer>
     </section>
   );
 };

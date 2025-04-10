@@ -56,11 +56,11 @@ const Projects = () => {
   return (
     <section
       id="projects"
-      className="w-screen py-16 px-6 bg-gradient-to-r from-white to-gray-100"
+      className="w-screen py-16 px-6 bg-gradient-to-r from-white to-gray-100 dark:from-[#111] dark:to-[#222] transition-colors duration-300"
     >
       <div className="text-center">
-        <h2 className="text-4xl font-bold text-gray-900">My Projects</h2>
-        <p className="text-gray-600 mt-2">Explore my latest works</p>
+        <h2 className="text-4xl font-bold text-white-900">My Projects</h2>
+        <p className="text-white-600 mt-2">Explore my latest works</p>
       </div>
 
       {/* Filter Buttons */}
@@ -69,8 +69,8 @@ const Projects = () => {
           <button
             key={index}
             className={`px-4 py-2 rounded-md text-sm font-medium ${
-              selectedCategory === category ? "bg-orange-500 text-white" : "bg-white text-gray-800"
-            } border border-gray-300 hover:bg-orange-400 hover:text-white transition`}
+              selectedCategory === category ? "bg-orange-500 text-white" : "bg-white text-white-800"
+            } border border-gray-300 hover:bg-orange-400 hover:text-orange transition`}
             onClick={() => setSelectedCategory(category)}
           >
             {category}
@@ -90,7 +90,7 @@ const Projects = () => {
             <p className="text-gray-600">{project.description}</p>
             <a
               href={project.link}
-              className="inline-block mt-3 px-4 py-2 bg-orange-500 text-white rounded-md hover:bg-orange-600 transition"
+              className="inline-block mt-3 px-4 py-2 bg-orange-500 text-dark rounded-md transition"
             >
               View Project
             </a>
