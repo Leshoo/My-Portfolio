@@ -18,22 +18,21 @@ const Hero = () => {
 
         {/* Buttons */}
         <div className="flex flex-col md:flex-row gap-4 mt-4">
-          <a href="./Godfrey_Leshoo_CV.pdf" download className="px-6 py-3 bg-orange-500 text-white rounded-full shadow-md hover:bg-orange-600 transition">
+          <a href="./Godfrey_Leshoo_CV.pdf" download className="text-white border-2 border-orange-500 px-6 py-3 rounded-full shadow-md transition">
             Download CV
           </a>
-          <a href="#contact" className="px-6 py-3 border-2 border-orange-500 text-white-500 rounded-full hover:bg-orange-500 hover:text-white transition">
+          <a href="#contact" className="px-6 py-3 border-2 border-orange-500 text-white-500 rounded-full hover:bg-white-500 transition">
             Contact Me
           </a>
         </div>
 
         {/* Social Icons */}
         <div className="flex gap-4 mt-6 justify-center md:justify-start">
-          <a href="www.linkedin.com/in/godfrey-leshoo-2a8193230" className="text-blue-600 text-2xl" target="blank"><i className="fab fa-facebook"></i></a>
-          <a href="#" className="text-blue-400 text-2xl"><i className="fab fa-twitter"></i></a>
-          <a href="#" className="text-blue-700 text-2xl"><i className="fab fa-linkedin"></i></a>
-          <a href="#" className="text-gray-700 text-2xl"><i className="fab fa-instagram"></i></a>
-          <a href="#" className="text-gray-700 text-2xl"><i className="fab fa-tiktok"></i></a>
-          <a href="#" className="text-gray-700 text-2xl"><i className="fab fa-whatsapp"></i></a>
+          <a href="https://facebook.com/godfrey.leshoo.50" className="text-blue-600 text-2xl" target="blank"><i className="fab fa-facebook"></i></a>
+          <a href="https://twitter.com/Godfrey_Leshoo" className="text-blue-400 text-2xl" target="_blank"><i className="fab fa-twitter"></i></a>
+          <a href="https://linkedin.com/in/godfrey-leshoo-2a8193230" className="text-blue-700 text-2xl" target="_blank"><i className="fab fa-linkedin"></i></a>
+          <a href="https://github.com/leshoo" className="text-blue-700 text-2xl" target="_blank" rel="noopener noreferrer"><i className="fab fa-github"></i></a>
+          <a href="https://wa.me/254718139099" className="text-gray-700 text-2xl" target="_blank" rel="noopener noreferrer"><i className="fab fa-whatsapp"></i></a>
         </div>
       </div>
 

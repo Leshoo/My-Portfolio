@@ -90,7 +90,7 @@ const Projects = () => {
             <p className="text-gray-600">{project.description}</p>
             <a
               href={project.link}
-              className="inline-block mt-3 px-4 py-2 bg-orange-500 text-dark rounded-md transition"
+              className="inline-block mt-3 px-4 py-2 border-2 bg-orange-500 text-dark rounded-md transition"
             >
               View Project
             </a>

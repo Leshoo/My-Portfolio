@@ -56,7 +56,7 @@ const Navbar = () => {
         {/* Mobile Menu Button */}
         <button
          onClick={toggleMenu}
-           className="fixed top-4 right-4 z-50 md:hidden px-3 py-2 border rounded text-gray-700 border-gray-700 bg-white shadow-lg">
+           className="fixed top-4 right-4 z-50 md:hidden px-3 py-2 border rounded text-white-700 border-white-700 bg-white shadow-lg">
              ☰
         </button>
 
@@ -83,17 +83,20 @@ const Navbar = () => {
 
           {/* Social Media Links in Mobile Menu */}
           <div className="flex space-x-4 mt-4">
-            <a href="https://facebook.com/yourusername" target="_blank" rel="noopener noreferrer">
-              <FaFacebook className="text-gray-700 hover:text-orange-500 text-xl transition duration-300" />
+            <a href="https://facebook.com/godfrey.leshoo.50" target="_blank" rel="noopener noreferrer">
+              <FaFacebook className="text-white-700 hover:text-orange-500 text-xl transition duration-300" />
             </a>
-            <a href="https://twitter.com/yourusername" target="_blank" rel="noopener noreferrer">
-              <FaTwitter className="text-gray-700 hover:text-orange-500 text-xl transition duration-300" />
+            <a href="https://twitter.com/Godfrey_Leshoo" target="_blank" rel="noopener noreferrer">
+              <FaTwitter className="text-white-700 hover:text-orange-500 text-xl transition duration-300" />
             </a>
-            <a href="https://linkedin.com/in/yourusername" target="_blank" rel="noopener noreferrer">
-              <FaLinkedin className="text-gray-700 hover:text-orange-500 text-xl transition duration-300" />
+            <a href="https://linkedin.com/in/godfrey-leshoo-2a8193230" target="_blank" rel="noopener noreferrer">
+              <FaLinkedin className="text-white-700 hover:text-orange-500 text-xl transition duration-300" />
             </a>
-            <a href="https://github.com/yourusername" target="_blank" rel="noopener noreferrer">
-              <FaGithub className="text-gray-700 hover:text-orange-500 text-xl transition duration-300" />
+            <a href="https://github.com/Leshoo" target="_blank" rel="noopener noreferrer">
+              <FaGithub className="text-white-700 hover:text-orange-500 text-xl transition duration-300" />
+            </a>
+            <a href="https://wa.me/254718139099" target="_blank" rel="noopener noreferrer">
+          <FaWhatsapp className="text-white-700 hover:text-orange-500 text-xl transition duration-300"/>
             </a>
           </div>
         </ul>
